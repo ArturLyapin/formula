@@ -2,3 +2,5 @@
 /tmp
 /vendor/bundle
 .idea/
+.env.development
+.bundle/
