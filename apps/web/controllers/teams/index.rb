@@ -4,7 +4,7 @@ module Web::Controllers::Teams
 
     expose :teams
 
-    def call(params)
+    def call(_params)
       @teams = TeamRepository.new.all
     end
   end

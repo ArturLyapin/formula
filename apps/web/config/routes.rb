@@ -3,4 +3,4 @@
 
 root to: 'teams#index'
 
-resources :teams, only: [:index, :show]
+resources :teams, only: %i[index show]
