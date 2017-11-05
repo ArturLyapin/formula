@@ -9,8 +9,7 @@ gem 'rake'
 gem 'pg'
 
 group :development do
-  # Code reloading
-  # See: http://hanamirb.org/guides/projects/code-reloading
+  gem 'overcommit'
   gem 'rubocop', require: false
   gem 'shotgun'
 end
