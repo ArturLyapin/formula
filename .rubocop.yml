@@ -19,6 +19,7 @@ Metrics/BlockLength:
     - 'spec/**/*_spec.rb'
     - 'spec/factories/**/*'
     - 'spec/support/**/*.rb'
+    - 'apps/web/application.rb'
 
 Metrics/LineLength:
   Max: 125
@@ -37,6 +38,11 @@ Style/Lambda:
 
 Style/MixinGrouping:
   Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'spec/support/**/*.rb'
+    - 'spec/features_helper.rb'
 
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented

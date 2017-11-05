@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-module Web::Views::Teams
-  class Index
-    include Web::View
+module Web
+  module Views
+    module Teams
+      class Index
+        include Web::View
+      end
+    end
   end
 end
