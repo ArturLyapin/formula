@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'hanami', '~> 1.0'
-gem 'hanami-model', '~> 1.0'
+gem 'hanami'
+gem 'hanami-model'
 
 gem 'pg'
 
@@ -17,6 +17,8 @@ group :test, :development do
 end
 
 group :test do
+  gem 'minitest'
+  gem 'factory_bot'
 end
 
 group :production do
