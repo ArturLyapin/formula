@@ -1,0 +1,53 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+  Exclude:
+    - 'vendor/**/*'
+
+CaseIndentation:
+  IndentOneStep: true
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+    - 'spec/**/*_spec.rb'
+    - 'spec/factories/**/*'
+    - 'spec/support/**/*.rb'
+    - 'apps/web/application.rb'
+
+Metrics/LineLength:
+  Max: 125
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/MixinGrouping:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'spec/support/**/*.rb'
+    - 'spec/features_helper.rb'
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+  IndentationWidth: 2
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+  EnforcedStyleForEmptyBraces: no_space

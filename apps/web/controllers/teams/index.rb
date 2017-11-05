@@ -1,11 +1,17 @@
-module Web::Controllers::Teams
-  class Index
-    include Web::Action
+# frozen_string_literal: true
 
-    expose :teams
+module Web
+  module Controllers
+    module Teams
+      class Index
+        include Web::Action
 
-    def call(params)
-      @teams = TeamRepository.new.all
+        expose :teams
+
+        def call(_params)
+          @teams = TeamRepository.new.all
+        end
+      end
     end
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This loads all factory girl files
 # Assuming all of them are in 'spec/factories/'
 Dir[Hanami.root.join('spec/factories/*.rb')].each { |f| require f }

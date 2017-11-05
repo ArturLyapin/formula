@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'rake'
 gem 'hanami'
 gem 'hanami-model'
+gem 'rake'
 
 gem 'pg'
 
 group :development do
-  # Code reloading
-  # See: http://hanamirb.org/guides/projects/code-reloading
+  gem 'overcommit'
+  gem 'rubocop', require: false
   gem 'shotgun'
 end
 
@@ -17,8 +19,8 @@ group :test, :development do
 end
 
 group :test do
-  gem 'minitest'
   gem 'factory_bot'
+  gem 'minitest'
 end
 
 group :production do
