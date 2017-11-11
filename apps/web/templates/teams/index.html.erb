@@ -1,5 +1,5 @@
 <% teams.each do |team| %>
-  <%= team.name %>
+  <%= link_to team.name, routes.team_path(team.id) %>
   <hr/>
   <br/>
 <% end %>
