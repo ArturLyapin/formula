@@ -9,7 +9,7 @@ module Web
         expose :team
 
         def call(params)
-          @team = TeamRepository.new.find(params[:id])
+          @team = TeamRepository.new.find_with_director(params[:id])
         end
       end
     end
