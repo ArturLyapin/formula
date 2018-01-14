@@ -5,4 +5,6 @@
 
 root to: 'teams#index'
 
-resources :teams, only: %i[index show]
+resources :teams, only: %i[index show] do
+  resources :directors, only: :show
+end
